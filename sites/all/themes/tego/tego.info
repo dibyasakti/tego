@@ -1,0 +1,52 @@
+; $Id:  tego.info,v 1.21.2.3 2011/01/01 13:24:54 jarek Exp $
+
+name        = tego
+description = tego theme
+screenshot  = screenshot.png
+version     = VERSION
+core        = 6.x
+engine      = phptemplate
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = favicon
+
+;regions[header_menu]    = Header menu
+;regions[footer_menu]    = Footer menu
+;regions[header]         = Header
+;regions[sidebar_first]  = First sidebar
+;regions[sidebar_second] = Second sidebar
+;regions[highlight]      = Highlighted
+;regions[content_top]    = Content top
+;regions[content]        = Content
+;regions[content_bottom] = Content bottom
+regions[left_bar]        = Left Bar
+regions[right_content]   = Right Content
+regions[block-container] = Block Container 
+
+
+
+regions[footer_link1]    = Footer Link1
+regions[footer_link2]    = Footer Link2
+regions[footer_link3]    = Footer Link3
+regions[footer_link4]    = Footer Link4
+regions[footer_link5]    = Footer Link5
+regions[footer_link6]    = Footer Link6
+
+stylesheets[all][]   = reset.css
+stylesheets[all][]   = base.css
+stylesheets[all][]   = style.css
+stylesheets[all][]   = drupal-6.css
+stylesheets[all][]   = colors.css
+stylesheets[print][] = print.css
+
+
+; Information added by drupal.org packaging script on 2011-01-01
+version = "6.x-1.20"
+core = "6.x"
+project = "tego"
+datestamp = "1293888721"
+

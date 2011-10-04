@@ -25,7 +25,23 @@ features[] = favicon
 ;regions[content_bottom] = Content bottom
 regions[left_bar]        = Left Bar
 regions[right_content]   = Right Content
-regions[block-container] = Block Container 
+regions[block-container] = Block Container
+
+regions[bottom_blocks_region1] = Bottom Blocks Region 1
+regions[bottom_blocks_region2] = Bottom Blocks Region 2
+
+;regions[bottom_blocks_one] = Bottom Block 1
+;regions[bottom_blocks_two] = Bottom Block 2
+;regions[bottom_blocks_three] = Bottom Block 3
+;regions[bottom_blocks_four] = Bottom Block 4
+;regions[bottom_blocks_five] = Bottom Block 5
+;regions[bottom_blocks_six] = Bottom Block 6
+
+
+;regions[right_blocks_one] = Right Block 1
+;regions[right_blocks_two] = Right Block 2
+;regions[right_blocks_three] = Right Block 3
+ 
 
 
 

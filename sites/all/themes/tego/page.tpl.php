@@ -129,44 +129,9 @@
             
             
             <div id="right_content"><!-- right-content starts here -->
-            <div class="sec">
+            
                <?php echo $right_content;?>
-            </div>
-            	<div class="sec">
-                
-                	<img src="<?php print base_path(). path_to_theme(); ?>/images/sidebar_img2.jpg" width="220" height="100" alt="" />
-                	<h3>Get An ATA Spec 2000 Kit</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#">MORE</a></p>
-                    
-                </div>
-                
-                <div class="sec">
-                	<img src="<?php print base_path(). path_to_theme(); ?>/images/sidebar_img4.jpg" width="220" height="100" alt="" />
-                	<h3>Case Studies</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#">MORE</a></p>
-                    
-                </div>
-                
-				<div class="sec">
-                
-                	<img src="<?php print base_path(). path_to_theme(); ?>/images/sidebar_img5.jpg" width="220" height="100" alt="" />
-                	<h3>Products</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#">MORE</a></p>
-                    
-                </div>
-                
-                <div class="resource-sec">
-                
-                    	<h3 class="block1">Aerospace &amp; Defence</h3>
-                        <ul class="resources">
-                        	<li class="whitepaper"><p><a href="#">Whitepaper:</a>Lorem Ipsum is simply dummy text</p></li>
-                            <li class="video"><p><a href="#">Video:</a>Lorem Ipsum is simply dummy text</p></li>
-                            <li class="whitepaper"><p><a href="#">Whitepaper:</a>Lorem Ipsum is simply dummy text</p></li>
-                            <li class="video"><p><a href="#">Video:</a>Lorem Ipsum is simply dummy text</p></li>
-                            <li class="video"><p><a href="#">Video:</a>Lorem Ipsum is simply dummy text</p></li>
-                        </ul>
-                    
-                </div>
+            
             </div><!-- right-content ends here -->
         	
         

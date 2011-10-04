@@ -101,11 +101,12 @@
         
        			</div><!-- banner ends here -->
                 <div id="block-container"><!-- block container starts here -->
-                
-                	<div class="block">
+					<?php print $bottom_blocks_region1; ?>
+					
+                	<!-- <div class="block">
                     
                     	<h3 class="block1">Aerospace &amp; Defence</h3>
-                        <img src="<?php print path_to_theme(); ?>/images/aerospace_img.jpg" width="220" height="90" alt="" />
+                        <img src="<?php //print path_to_theme(); ?>/images/aerospace_img.jpg" width="220" height="90" alt="" />
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting<a href="#">MORE</a></p>
                     
                     </div>
@@ -113,7 +114,7 @@
                 	<div class="block">
                     
                     	<h3 class="block2">Medical</h3>
-                        <img src="<?php print path_to_theme(); ?>/images/medical_img.jpg" width="220" height="90" alt="" />
+                        <img src="<?php //print path_to_theme(); ?>/images/medical_img.jpg" width="220" height="90" alt="" />
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting<a href="#">MORE</a></p>
                     
                     </div>
@@ -121,16 +122,19 @@
                 	<div class="block">
                     
                     	<h3 class="block3">Industrial Maintenance</h3>
-                        <img src="<?php print path_to_theme(); ?>/images/indmaintenance_img.jpg" width="220" height="90" alt="" />
+                        <img src="<?php //print path_to_theme(); ?>/images/indmaintenance_img.jpg" width="220" height="90" alt="" />
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting <a href="#">MORE</a></p>
                     
                     </div>
-                
+					-->
                 </div><!-- block container ends here -->
 
                 <div id="block-container-bottom"><!-- block container bottom starts here -->
-                
-                	<div class="bottom-block">
+					
+					<?php print $bottom_blocks_region2; ?>
+                	
+					<!--
+					<div class="bottom-block">
                     
                     	<h3 class="block1">Aerospace &amp; Defence</h3>
                         <ul class="resources">
@@ -142,7 +146,8 @@
                         </ul>
                     
                     </div>
-                    
+                   
+					
                 	<div class="bottom-block">
                     
                     	<h3 class="block2">Medical</h3>
@@ -157,6 +162,7 @@
                     
                     </div>
                     
+					 
                 	<div class="bottom-block ind">
                     
                     	<h3 class="block3">Industrial Maintenance</h3>
@@ -164,7 +170,7 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href="#">MORE</a></p>
                     
                     </div>
-                
+					-->
                 </div><!-- block container bottom ends here -->
 
             
@@ -172,10 +178,14 @@
             
             
             <div id="right_content"><!-- right-content starts here -->
-            
+				
+					<?php print $right_content; ?>
+				
+				
+				<!--
             	<div class="sec">
                 
-                	<img src="<?php print path_to_theme(); ?>/images/sidebar_img1.jpg" width="220" height="100" alt="" />
+                	<img src="<?php //print path_to_theme(); ?>/images/sidebar_img1.jpg" width="220" height="100" alt="" />
                 	<h3>Attend Aviation Webinar</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#">MORE</a></p>
                     
@@ -183,7 +193,7 @@
                 
 				<div class="sec">
                 
-                	<img src="<?php print path_to_theme(); ?>/images/sidebar_img2.jpg" width="220" height="100" alt="" />
+                	<img src="<?php // print path_to_theme(); ?>/images/sidebar_img2.jpg" width="220" height="100" alt="" />
                 	<h3>Get An ATA Spec 2000 Kit</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#">MORE</a></p>
                     
@@ -191,12 +201,12 @@
                 
 				<div class="sec">
                 
-                	<img src="<?php print path_to_theme(); ?>/images/sidebar_img3.jpg" width="220" height="100" alt="" />
+                	<img src="<?php //print path_to_theme(); ?>/images/sidebar_img3.jpg" width="220" height="100" alt="" />
                 	<h3>Become A Partner</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#">MORE</a></p>
                     
                 </div>
-        
+				-->
             </div><!-- right-content ends here -->
         
         

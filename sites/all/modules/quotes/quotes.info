@@ -1,0 +1,17 @@
+name = "Quotes"
+description = "Allows users to maintain personal lists of quotations and display quotes in one or more blocks."
+core = 6.x
+
+; Information added by drupal.org packaging script on 2009-10-18
+version = "6.x-1.x-dev"
+core = "6.x"
+project = "quotes"
+datestamp = "1255825518"
+
+
+; Information added by drupal.org packaging script on 2011-03-23
+version = "6.x-1.42"
+core = "6.x"
+project = "quotes"
+datestamp = "1300904169"
+

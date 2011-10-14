@@ -59,6 +59,11 @@ stylesheets[all][]   = drupal-6.css
 stylesheets[all][]   = colors.css
 stylesheets[print][] = print.css
 
+stylesheets[all][] = mystyle.css
+
+
+scripts[] = my-script.js
+
 
 ; Information added by drupal.org packaging script on 2011-01-01
 version = "6.x-1.20"

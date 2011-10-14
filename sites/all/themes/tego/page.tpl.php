@@ -64,31 +64,36 @@
         
         </div><!-- header ends here -->
         
-        <div id="navigation"><!-- navigation starts here -->
+		<div id="navigation"><!-- navigation starts here -->
         
         	<div id="nav-left"><img src="<?php print base_path(). path_to_theme(); ?>/images/nav_left.jpg" width="11" height="31" alt="" /></div>
             <div id="nav-middle">
-            
-            	<?php print preg_replace('/<a (.*?)>(.*?)<\\/a>/i','<a \\1><span>\\2</span></a>',theme('links', $primary_links, array('class' =>'links', 'id' => 'navlist'))); ?>
+				<div id="primary-menu"><?php print theme('nice_menus_primary_links', 'down'); ?></div>
+            	<?php //print preg_replace('/<a (.*?)>(.*?)<\\/a>/i','<a \\1><span>\\2</span></a>',theme('links', $primary_links, array('class' =>'links', 'id' => 'navlist'))); ?>
             
             </div>
             <div id="nav-right"><img src="<?php print base_path(). path_to_theme(); ?>/images/nav_right.jpg" width="8" height="31" alt="" /></div>
         
-        </div><!-- navigation ends here -->
+		</div><!-- navigation ends here -->
         
        <div id="inner-banner"><!-- inner-banner starts here -->
         
         	<h1><?php echo $title; ?></h1>
         
         </div><!-- inner banner ends here -->
-        
+        		
         <div id="inner-contentarea"><!-- inner-contentarea starts here -->
         
         	<div id="left-content"><!-- left-content starts here -->
         	  
 				<p class="orange-bar">&nbsp;</p>
-                <div id="left_bar">
                 
+				<?php if ($breadcrumb): ?>
+				  <div class="page-breadcrumb"><?php print $breadcrumb; ?></div> <!-- /breadcrumb -->
+				<?php endif; ?>
+				
+				<div id="left_bar">
+					
                 	<div class="overview">
                     
                     	<h5>OVERVIEW</h5>
@@ -99,11 +104,8 @@
                         </ul>
                     
                     </div>
-                    
-                    <p>"This technology could <br />take asset tracking <br />and total 
-                    life-cycle<br /> tracking to the next level"<br />
-                    - Andre Nathanson<br />
-                    VDC Research</p>
+					
+					<?php print $left_bar; ?>                    
                 </div>
                 <div id="right-content-container">
                 
@@ -184,7 +186,9 @@
         
     
     </div><!-- wrapper ends here -->
-
+<?php
+print $closure;
+?>
 
 </body>
 </html>

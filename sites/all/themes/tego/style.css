@@ -733,7 +733,8 @@ body.no-sidebars #header-menu, body.no-sidebars #header, body.no-sidebars #main-
 	color:#333333;
 	font-size:10px;;
 }
-#left_bar p{
+/*commented by manish*/
+/* #left_bar p{
 	font-size:12px;
 	color:#0066b3;
 	font-style:italic;
@@ -741,7 +742,7 @@ body.no-sidebars #header-menu, body.no-sidebars #header, body.no-sidebars #main-
 	text-align:right;
 	margin-top:23px;
 }
-
+ */
 #right-content-container .content h2{
 	color:#0066b3;
 	font-size:16px;

@@ -63,18 +63,23 @@
         
         </div><!-- header ends here -->
         
-        <div id="navigation"><!-- navigation starts here -->
+		<div id="navigation"><!-- navigation starts here -->
         
         	<div id="nav-left"><img src="<?php print path_to_theme(); ?>/images/nav_left.jpg" width="11" height="31" alt="" /></div>
             <div id="nav-middle">
-            
-            	<?php print preg_replace('/<a (.*?)>(.*?)<\\/a>/i','<a \\1><span>\\2</span></a>',theme('links', $primary_links, array('class' =>'links', 'id' => 'navlist'))); ?>
+				<div id="primary-menu"><?php print theme('nice_menus_primary_links', 'down'); ?></div>
+            	<?php //print preg_replace('/<a (.*?)>(.*?)<\\/a>/i','<a \\1><span>\\2</span></a>',theme('links', $primary_links, array('class' =>'links', 'id' => 'navlist'))); ?>
             
             </div>
             <div id="nav-right"><img src="<?php print path_to_theme(); ?>/images/nav_right.jpg" width="8" height="31" alt="" /></div>
         
         </div><!-- navigation ends here -->
         
+		<?php if ($breadcrumb): ?>
+          <div id="breadcrumb" class="breadcrumb"><?php print $breadcrumb; ?></div> <!-- /breadcrumb -->
+		<?php endif; ?>
+		
+		
         <div id="contentarea"><!-- contentarea starts here -->
         
         	<div id="left-content"><!-- left-content starts here -->
@@ -100,77 +105,17 @@
                     </div>
         
        			</div><!-- banner ends here -->
-                <div id="block-container"><!-- block container starts here -->
-					<?php print $bottom_blocks_region1; ?>
+               
+			    <div id="block-container"><!-- block container starts here -->
+				
+					<?php print $bottom_blocks_region1; ?>		
 					
-                	<!-- <div class="block">
-                    
-                    	<h3 class="block1">Aerospace &amp; Defence</h3>
-                        <img src="<?php //print path_to_theme(); ?>/images/aerospace_img.jpg" width="220" height="90" alt="" />
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting<a href="#">MORE</a></p>
-                    
-                    </div>
-                    
-                	<div class="block">
-                    
-                    	<h3 class="block2">Medical</h3>
-                        <img src="<?php //print path_to_theme(); ?>/images/medical_img.jpg" width="220" height="90" alt="" />
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting<a href="#">MORE</a></p>
-                    
-                    </div>
-                    
-                	<div class="block">
-                    
-                    	<h3 class="block3">Industrial Maintenance</h3>
-                        <img src="<?php //print path_to_theme(); ?>/images/indmaintenance_img.jpg" width="220" height="90" alt="" />
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <a href="#">MORE</a></p>
-                    
-                    </div>
-					-->
                 </div><!-- block container ends here -->
 
                 <div id="block-container-bottom"><!-- block container bottom starts here -->
 					
 					<?php print $bottom_blocks_region2; ?>
                 	
-					<!--
-					<div class="bottom-block">
-                    
-                    	<h3 class="block1">Aerospace &amp; Defence</h3>
-                        <ul class="resources">
-                        	<li class="whitepaper"><a href="#">Whitepaper:</a>Lorem Ipsum is simply dummy text</li>
-                            <li class="video"><a href="#">Video:</a>Lorem Ipsum is simply dummy text</li>
-                            <li class="whitepaper"><a href="#">Whitepaper:</a>Lorem Ipsum is simply dummy text</li>
-                            <li class="video"><a href="#">Video:</a>Lorem Ipsum is simply dummy text</li>
-                            <li class="video"><a href="#">Video:</a>Lorem Ipsum is simply dummy text</li>
-                        </ul>
-                    
-                    </div>
-                   
-					
-                	<div class="bottom-block">
-                    
-                    	<h3 class="block2">Medical</h3>
-                        <ul class="medical">
-                        	<li>Lorem Ipsum is simply dummy text of the printing and <a href="#">MORE</a></li>
-                            <li>Lorem Ipsum is simply dummy text of the printing and <a href="#">MORE</a></li>
-                            <li>Lorem Ipsum is simply dummy text of the printing and <a href="#">MORE</a></li>
-                            <li>Lorem Ipsum is simply dummy text of the printing and <a href="#">MORE</a></li>
-                            <li>Lorem Ipsum is simply dummy text of the printing and <a href="#">MORE</a></li>
-                        </ul>
-                        
-                    
-                    </div>
-                    
-					 
-                	<div class="bottom-block ind">
-                    
-                    	<h3 class="block3">Industrial Maintenance</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href="#">MORE</a></p>
-                    
-                    </div>
-					-->
                 </div><!-- block container bottom ends here -->
 
             
@@ -259,7 +204,9 @@
         
     
     </div><!-- wrapper ends here -->
-
+<?php
+print $closure;
+?>
 
 </body>
 </html>

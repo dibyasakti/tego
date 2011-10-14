@@ -1,0 +1,184 @@
+.view-news-category  .views-row{
+	border-bottom: 2px solid ;
+    color: #086782;
+    margin-bottom: 10px;
+}
+.view-news-category  .views-field-name-1{
+	float : left;
+	font-style: italic;
+}
+.view-news-category  .views-field-title{
+	font-size : 1.5em;
+	 margin-bottom: 5px;
+}
+
+.view-news-category  .views-field-created{
+	font-style: italic;
+}
+
+.view-news-category  .views-field-phpcode{
+ background: url("images/more.png") no-repeat scroll 0 6px transparent;
+ font-size : 10px;
+ float: right;
+ margin-top: -18px;
+ padding-left: 10px;
+ 
+}
+
+
+
+/*css for first order primary navigation starts here*/
+
+
+#nav-middle #primary-menu ul{
+	list-style-type:none;
+	width:837px;
+	height:30px;
+	margin-left:55px;
+}
+
+#nav-middle #primary-menu li{
+	float:left;
+	margin-left:25px;
+	margin-right:25px;
+	position:relative;
+	background: transparent !important;
+}
+
+#nav-middle #primary-menu li a:hover{
+	background:#48AD39;
+}
+#nav-middle #primary-menu li a{
+	font-size:14px;
+	font-weight:bold !important;
+	text-transform:uppercase;
+	color:#fff;
+	line-height:1.5;
+}
+
+#nav-middle #primary-menu li a SPAN{
+	font-size:14px;
+	font-weight:bold !important;
+	text-transform:uppercase;
+	color:#fff;
+	line-height:2.2;
+}
+
+#nav-middle #primary-menu li a SPAN:hover{
+	color:#000000;
+}
+/*end*/
+
+/* css for second degree primary navigation */
+
+
+#nav-middle #primary-menu ul ul{
+	height: 10px;
+    list-style-type: none;
+    width: 150px;
+	margin-left: 0px;
+}
+
+
+#nav-middle #primary-menu  li ul li{
+	background:none !important;
+}
+#nav-middle #primary-menu  li ul a{
+    float:left;
+	color:#ffffff;
+	margin-left:-25px;
+	padding-bottom:0px !important;
+    line-height: 1.4 !important;
+    padding: 2px 13px !important;
+	color: #000000;
+	background:#F0F2EF;	
+	margin-top:-4px;
+	border-color: #48AD39 !important;
+    border-left: 4px solid #48AD39 !important;
+    border-right: 4px solid #48AD39 !important;
+    border-style: solid !important;
+    border-width: 2px 4px !important;
+
+}
+
+#nav-middle #primary-menu  li:hover ul {
+    display:block;
+	background-color:#069;
+	color:#ffffff;
+	padding-bottom:10px;
+	padding-top:0px;
+}
+
+#nav-middle #primary-menu li:hover ul  li a:hover{
+	color:#ffffff;
+}
+
+.quote-div{
+	color: #0066B3;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 10px;
+	margin-left:20 px;
+    text-align: right;
+	margin-right: 37px;
+	float: right;
+}
+
+.quotes{
+	font-size:12px;
+	color:#0066b3;
+	font-style:italic;
+	width:90%;
+	text-align:right;
+	margin-top:23px;
+	float: right;
+}
+
+.quotes .quotes-author {
+	clear: both;
+    text-align: right;
+	margin-top: 5px;
+}
+
+.email-page{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin: 9px 36px auto 18px;
+    padding: 7px 7px 7px 0;
+    width: 50%;
+	float: left;
+}
+
+.email-page p  a{
+	font-size: 1.1em;
+	font-weight: bold !important;
+	text-transform: uppercase;
+}
+
+.follow-us-one .heading{
+    margin: 8px 38px 0px auto;
+    width: 222px;
+}
+
+.follow-us-one .heading p{
+	font-weight:bold;
+}
+
+.follow-us-one .media-contents{
+    margin: 8px 38px 12px auto;
+    width: 222px;
+	float: right;
+}
+
+.follow-us-one .media-link{
+    float: left;
+	/* margin: 8px 38px 12px auto; */
+    width: 40px;
+}
+
+.page-breadcrumb{
+	float: right;
+    height: 10px;
+    padding-bottom: 0.5em;
+    width: 677px;
+}

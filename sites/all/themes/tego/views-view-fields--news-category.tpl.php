@@ -19,7 +19,6 @@
  * @ingroup views_templates
  */
 ?>
-<?php echo "<PRE>"; print_r($args); die(); ?>
 <?php foreach ($fields as $id => $field): ?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>

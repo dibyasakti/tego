@@ -5,24 +5,60 @@
 }
 .view-news-category  .views-field-name-1{
 	float : left;
-	font-style: italic;
 }
+
+.view-news-category  .views-field-name-1 .views-label-name-1{
+	color: #666666;
+	font-weight: bold;
+}
+
+
+.view-news-category  .views-field-name-1 .field-content a{
+	color: #666666;
+	font-weight: bold;
+}
+
 .view-news-category  .views-field-title{
 	font-size : 1.5em;
-	 margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
-.view-news-category  .views-field-created{
+.view-news-category  .views-field-created span{
+	font-size:12px;
+	color: #666666;
+	font-weight: bold;
+}
+
+.view-news-category  .views-field-name{
 	font-style: italic;
 }
 
-.view-news-category  .views-field-phpcode{
+#right-content-container .view-news-category  .views-field-body .field-content p{
+	margin-bottom:6px;
+}
+
+
+.view-news-category  .views-field-phpcode #news-view-more {
  background: url("images/more.png") no-repeat scroll 0 6px transparent;
  font-size : 10px;
  float: right;
  margin-top: -18px;
  padding-left: 10px;
  
+}
+
+.view-news-category  .news-heading{
+	border-bottom: 2px solid #F6931E;
+    color: #666666;
+    margin-bottom: 20px;
+    margin-top: 4px;
+    padding-bottom: 10px;
+}
+
+.view-news-category  .news-heading-title{
+	font-size : 2em;
+	margin-bottom: 5px;
+	color: #086782;
 }
 
 
@@ -158,6 +194,7 @@
 .follow-us-one .heading{
     margin: 8px 38px 0px auto;
     width: 222px;
+	font-weight: bold;
 }
 
 .follow-us-one .heading p{
@@ -176,9 +213,76 @@
     width: 40px;
 }
 
+/* css for footer media buttons */
+
+.foot-media{
+	float: left;
+    margin-left: 25px;
+    margin-top: 90px;
+}
+
+.follow-us-two .heading{
+    margin-bottom: 8px;
+	font-weight: bold;
+}
+
+.follow-us-two .media-link{
+    float: left;
+    width: 40px;
+}
+
+
+/* breadcrumb css */
+
 .page-breadcrumb{
 	float: right;
     height: 10px;
-    padding-bottom: 0.5em;
-    width: 677px;
+    padding-bottom: 0.3em;
+    width: 672px;
+}
+
+.page-breadcrumb .breadcrumb a{
+	font-weight: bold;
+}
+/*******/
+
+/* blog page css */
+.blog-content #blog-heading{
+	color: #086782;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.blog-content #gray-div{
+	height:100px;
+	border-radius:10px;
+	background:gray;
+}
+
+.view-news-category  .views-field-phpcode .share-blog{
+ background: url("images/more.png") no-repeat scroll 0 5px transparent;
+ font-size : 12px;
+ float: left;
+ padding-left: 10px;
+ text-transform: uppercase;
+ margin-right: 8px;
+}
+
+.view-news-category .views-field-field-blog-keywords-value span{
+	font-size : 12px;
+	color: #666666;
+	font-weight: bold;
+}
+
+.view-news-category .views-field-picture{
+	float: right;
+    margin-top: -27px;
+}
+
+.view-news-category .gray-div{
+	height:200px;
+	border-radius:10px;
+	background:gray;
+	margin-top:10px;
+	margin-bottom:10px;
 }

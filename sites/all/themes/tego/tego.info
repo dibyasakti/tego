@@ -44,7 +44,7 @@ regions[bottom_blocks_region2] = Bottom Blocks Region 2
  
 
 
-
+regions[footer_social_media]    = Footer Social Media
 regions[footer_link1]    = Footer Link1
 regions[footer_link2]    = Footer Link2
 regions[footer_link3]    = Footer Link3

@@ -52,10 +52,14 @@
                 <div id="head-right-bottom">
                 
                 	<ul>
-                          <li><a href="<?php echo $base_url;?>/contact">CONTACT US</a></li>
-                        <li><a href="<?php echo $base_url;?>/user">LOGIN</a></li>
-                        <li><a href="#">SOCIAL MEDIA</a></li>
-
+						<?php if(($user->uid) > 0 ){?>
+							<li><a href="<?php echo $base_url;?>/logout">LOGOUT(<?php print $user->name; ?>)</a></li>
+                        <?php } ?>
+                        <li><a href="<?php echo $base_url;?>/contact">CONTACT US</a></li>
+                        <?php if(($user->uid) == 0 ){?>
+							<li><a href="<?php echo $base_url;?>/user">LOGIN</a></li>
+                        <?php } ?>
+						<li><a href="#">SOCIAL MEDIA</a></li>						
                     </ul>
                 
                 </div>
@@ -85,12 +89,12 @@
         <div id="inner-contentarea"><!-- inner-contentarea starts here -->
         
         	<div id="left-content"><!-- left-content starts here -->
-        	  
-				<p class="orange-bar">&nbsp;</p>
-                
+        	                  
 				<?php if ($breadcrumb): ?>
 				  <div class="page-breadcrumb"><?php print $breadcrumb; ?></div> <!-- /breadcrumb -->
 				<?php endif; ?>
+				
+				<p class="orange-bar">&nbsp;</p>
 				
 				<div id="left_bar">
 					
@@ -142,6 +146,12 @@
         
         <div id="footer"><!-- footer starts here -->
         	
+			<div class="foot-media">
+			
+				<?php print $footer_social_media; ?>
+				
+			</div>
+			
             <div id="footer-container">
         
         	    <div class="foot-box">

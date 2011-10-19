@@ -19,6 +19,7 @@
   
 </head>
 <?php global $base_url; ?>
+<?php global $user; ?>
 <body class="<?php print $body_classes; ?> <?php print $layout_classes; ?>">
 
 
@@ -49,12 +50,16 @@
                 
                 </div>
                 <div id="head-right-bottom">
-                
+										
                 	<ul>
+						<?php if(($user->uid) > 0 ){?>
+							<li><a href="<?php echo $base_url;?>/logout">LOGOUT(<?php print $user->name; ?>)</a></li>
+                        <?php } ?>
                         <li><a href="<?php echo $base_url;?>/contact">CONTACT US</a></li>
-                        <li><a href="<?php echo $base_url;?>/user">LOGIN</a></li>
-                        <li><a href="#">SOCIAL MEDIA</a></li>
-
+                        <?php if(($user->uid) == 0 ){?>
+							<li><a href="<?php echo $base_url;?>/user">LOGIN</a></li>
+                        <?php } ?>
+						<li><a href="#">SOCIAL MEDIA</a></li>						
                     </ul>
                 
                 </div>
@@ -160,7 +165,13 @@
         
         <div id="footer"><!-- footer starts here -->
         	
-            <div id="footer-container">
+			<div class="foot-media">
+			
+				<?php print $footer_social_media; ?>
+				
+			</div>
+            
+			<div id="footer-container">
         
         	    <div class="foot-box">
             

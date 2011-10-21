@@ -59,7 +59,7 @@
                         <?php if(($user->uid) == 0 ){?>
 							<li><a href="<?php echo $base_url;?>/user">LOGIN</a></li>
                         <?php } ?>
-						<li><a href="#">SOCIAL MEDIA</a></li>						
+						<li><a href="news/Social Media">SOCIAL MEDIA</a></li>						
                     </ul>
                 
                 </div>

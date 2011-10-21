@@ -1,5 +1,9 @@
+.view-news-category .view-content{
+	border-top: 1px solid #666666;
+	padding-top: 10px;
+}
 .view-news-category  .views-row{
-	border-bottom: 2px solid ;
+	border-bottom: 1px solid #666666;
     color: #086782;
     margin-bottom: 10px;
 }
@@ -48,11 +52,9 @@
 }
 
 .view-news-category  .news-heading{
-	border-bottom: 2px solid #F6931E;
     color: #666666;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 4px;
-    padding-bottom: 10px;
 }
 
 .view-news-category  .news-heading-title{
@@ -61,6 +63,14 @@
 	color: #086782;
 }
 
+.view-news-category #pager-top{
+	float:right;
+	margin-top: -20px;
+}
+
+.view-news-category #pager-bottom .item-list{
+	float:right;
+}
 
 
 /*css for first order primary navigation starts here*/
@@ -119,6 +129,13 @@
 #nav-middle #primary-menu  li ul li{
 	background:none !important;
 }
+
+#nav-middle #primary-menu  li ul li ul{
+	margin-left: 125px;
+	margin-top:-33px;
+}
+
+
 #nav-middle #primary-menu  li ul a{
     float:left;
 	color:#ffffff;
@@ -286,3 +303,31 @@
 	margin-top:10px;
 	margin-bottom:10px;
 }
+
+/* css for view product */
+.view-product-category .views-field-field-product-sample-image-fid{
+	float:left;
+	width:160px;
+	padding:5px;
+}
+
+.view-product-category .views-field-body{
+	float:right;
+	width:358px;
+}
+
+.view-product-category .views-field-title{
+	width:358px; 
+	float:right; 
+	font-size:18px;
+	padding-top:5px;
+}
+
+.view-product-category .views-row{
+	border-bottom: 1px solid #666666;
+    color: #086782;
+    margin-bottom: 10px;
+	float:left;
+}
+
+/******end**************/

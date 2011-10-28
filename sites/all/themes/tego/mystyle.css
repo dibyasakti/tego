@@ -51,13 +51,13 @@
  
 }
 
-.view-news-category  .news-heading{
+.news-heading{
     color: #666666;
     margin-bottom: 10px;
     margin-top: 4px;
 }
 
-.view-news-category  .news-heading-title{
+.news-heading-title{
 	font-size : 2em;
 	margin-bottom: 5px;
 	color: #086782;
@@ -331,3 +331,134 @@
 }
 
 /******end**************/
+
+/* css for view company */
+
+.view-management-persons .views-field-title{
+	width:358px; 
+	float:right; 
+	font-size:18px;
+	padding-top:5px;
+}
+
+.view-management-persons .views-field-field-profile-pic-fid{
+	float:left;
+	width:160px;
+	padding:5px;
+}
+
+.view-management-persons .views-field-body{
+	float:right;
+	width:358px;
+}
+
+.view-management-persons .views-row{
+	border-bottom: 1px solid #666666;
+    color: #086782;
+    margin-bottom: 10px;
+	float:left;
+}
+
+
+/*********End************/
+
+/* css for view Partners */
+
+.view-tego-partners .views-field-title{
+	width:358px; 
+	float:right; 
+	font-size:18px;
+	padding-top:5px;
+}
+
+.view-tego-partners .views-field-phpcode{
+	width:358px; 
+	float:right; 
+	font-size:15px;
+	padding-top:5px;
+}
+
+.view-tego-partners .views-field-phpcode a{
+	font-weight: bold;
+}
+
+.view-tego-partners .views-field-field-partner-image-fid{
+	float:left;
+	width:160px;
+	padding:5px;
+}
+
+.view-tego-partners .views-field-body{
+	float:right;
+	width:358px;
+}
+
+.view-tego-partners .views-row{
+	border-bottom: 1px solid #666666;
+    color: #086782;
+    margin-bottom: 10px;
+	float:left;
+}
+
+
+/*********End************/
+
+#left_bar .block-menu_block .overview ul li a{	
+    color: #333333;
+    font-size: 10px;
+	text-transform: uppercase;
+}
+
+#left_bar .block-menu_block .overview ul{	
+    list-style-type: none;
+    margin-right: 22px;
+    margin-top: 0px;
+    text-align: right;
+}
+
+#left_bar .block-menu_block .overview ul  li.leaf{	
+	list-style-type: none;
+	list-style-image: none;
+	padding:0px
+}
+
+#left_bar .block-menu_block .overview ul li .active{	
+	background: url("images/more.png") no-repeat scroll 11px 6px transparent;
+    clear: both;
+    color: #0066B3;
+    float: right;
+    font-size: 10px;
+    padding-left: 20px;
+}
+
+
+/*******/
+#head-right-top .search-form .form-item label{
+	border: medium none;
+    color: #0066B3;
+    cursor: pointer;
+    float: right;
+    font-size: 10px;
+    font-weight: bold;
+    outline: medium none;
+}
+
+#head-right-top .search-form .form-item{
+	margin: 2px 0;
+}
+
+#head-right-top .search-form .form-item .form-text{
+    background: url("images/search_bg.png") no-repeat scroll 0 0 transparent;
+    border: 0 none !important;
+    color: #999999;
+    float: right;
+    font-size: 11px;
+    height: 21px;
+    width: 222px;
+	padding: 0 0 0 16px;
+}
+
+#head-right-top .search-form .form-item .form-submit{
+	display: none;
+	visibility: hidden;
+}

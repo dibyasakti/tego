@@ -93,4 +93,18 @@ function corolla_tablesort_indicator($style) {
   }
 }
 
+function tego_theme(){
+  return array(
+      'user_login' => array(
+      'template' => 'user-login',
+      'arguments' => array('form' => NULL),
+    )
+  );	  
+}
+
+
+function tego_preprocess_user_login(&$variables) {
+  $variables['intro_text'] = t('This is my awesome login form');
+  $variables['rendered'] = drupal_render($variables['form']);
+}
 

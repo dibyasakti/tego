@@ -39,15 +39,10 @@
             </div>
             
             <div id="head-right">
-            
             	<div id="head-right-top">
-                
-                	<p><input type="submit" name="search" value="Search" / class="btn"></p>
-                    <ul>
-                        <li><input type="text" name="search" class="search" id="search" /></li>
-                        
-                    </ul>
-                
+					<?php 
+					  print drupal_get_form('search_form');
+					?>                	
                 </div>
                 <div id="head-right-bottom">
                 
@@ -96,19 +91,7 @@
 				
 				<p class="orange-bar">&nbsp;</p>
 				
-				<div id="left_bar">
-					
-                	<div class="overview">
-                    
-                    	<h5>OVERVIEW</h5>
-                        <ul>
-                        	<li><a href="#">CASE STUDIES</a></li>
-                            <li><a href="#">INDUSTRIAL PRODUCTS</a></li>
-                            <li><a href="#">INDUSTRIAL RESOURCES</a></li>
-                        </ul>
-                    
-                    </div>
-					
+				<div id="left_bar"> 
 					<?php print $left_bar; ?>                    
                 </div>
                 <div id="right-content-container">
